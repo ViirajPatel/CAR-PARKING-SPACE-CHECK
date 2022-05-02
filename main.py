@@ -26,7 +26,7 @@ def check(imgP):
         else:
             color=(0,0,255)
             thickness = 0
-       # cvzone.putTextRect(img,str(countPixels),(x,y+height-10),scale=1,thickness=1,offset=0,)
+        cvzone.putTextRect(img,str(countPixels),(x,y+height-10),scale=1,thickness=1,offset=0,)
 
         cv2.rectangle(img, pos, (pos[0]+width, pos[1]+height), color, thickness)
     outstr = f"Freespace : {count}/{len(posList)}"
